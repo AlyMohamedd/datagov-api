@@ -20,7 +20,7 @@ def get_db():
     )
  
 app = FastAPI(
-    title="Data.gov API - CSCE 2501 Milestone 3",
+    title="Project - Data.gov - CSCE 2501 Milestone 3",
     docs_url="/docs",
     redoc_url="/redoc"
 )
@@ -28,7 +28,7 @@ app = FastAPI(
 class NewUser(BaseModel):
     username: str
     email: str
-    gender: Optional[str] = "Prefer not to say"
+    gender: Optional[str] = "Male or Female"
     birthdate: Optional[str] = None
     country: Optional[str] = None
  
