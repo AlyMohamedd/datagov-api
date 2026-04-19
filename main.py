@@ -19,7 +19,11 @@ def get_db():
         cursorclass=pymysql.cursors.DictCursor
     )
  
-app = FastAPI(title="Data.gov API - CSCE 2501 Milestone 3")
+app = FastAPI(
+    title="Data.gov API - CSCE 2501 Milestone 3",
+    docs_url="/docs",
+    redoc_url="/redoc"
+)
  
 class NewUser(BaseModel):
     username: str
